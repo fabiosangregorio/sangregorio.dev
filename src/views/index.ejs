@@ -1,3 +1,44 @@
 <%- layout('shared/_layout') %>
 
-Hello world
+<%
+  function dateDiffInYears(dateold, datenew) {
+    var mnew = datenew.getMonth();
+    var mold = dateold.getMonth();
+    var diff = datenew.getFullYear() - dateold.getFullYear();
+    if (mold > mnew) diff--;
+    else if (mold == mnew && dateold.getDate() > datenew.getDate())
+      diff--;
+    return diff;
+  } 
+%>
+
+<header><h1 class="header"><%= header %></h1></header>
+
+<div class="cards-container">
+  <% for (var person of people) { %>
+    <article class="card">
+      <div class="overlay">
+        <a class="link-text" href="<%= person.url %>"><%= person.urlText %></a>
+        <a class="link-arrow" href="<%= person.url %>">
+          <img src="/images/arrow.svg" alt="Go to website">
+        </a>
+      </div>
+      <div class="card-content">
+        <div class="profile-img" style="background-image: url(<%= person.image %>);"></div>
+        <div class="card-info">
+          <header>
+            <h2 class="person-name"><%= person.name %></h2>
+            <div class="person-role"><%= person.role %></div>
+          </header>
+          <div class="person-info">
+            Age <%= dateDiffInYears(person.birthday, new Date()) %> 
+            <span class="separator">-</span> 
+            <%= person.location %>
+          </div>
+        </div>
+      </div>
+    </article>
+  <% } %>
+</div>
+
+<footer class="footer"><%= footer %></footer>
