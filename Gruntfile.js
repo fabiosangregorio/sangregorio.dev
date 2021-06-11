@@ -39,6 +39,15 @@ module.exports = function (grunt) {
         } 
       }
     },
+    
+    autoprefixer: {
+      options: {
+        browsers: ['last 2 versions', 'ie 8', 'ie 9']
+      },
+      files: {
+        'dist/css/bundle.min.css': 'dist/css/bundle.min.css'
+      }
+    },
 
     ejs: {
       dist: {
@@ -230,7 +239,8 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-sitemap');
   grunt.loadNpmTasks('grunt-cwebp');
+  grunt.loadNpmTasks('grunt-autoprefixer');
 
-  grunt.registerTask('default', ['clean:reset', 'sass', 'babel', 'ejs', 'sync', 'cssmin', 'uglify:dev', 'imagemin', 'cwebp', 'clean:dist',  'browserSync', 'watch']);
-  grunt.registerTask('build', ['clean:reset', 'sass', 'babel', 'ejs', 'sync', 'cssmin', 'uglify:dist', 'imagemin', 'cwebp', 'clean:dist', 'sitemap']);
+  grunt.registerTask('default', ['clean:reset', 'sass', 'babel', 'ejs', 'sync', 'cssmin', 'autoprefixer', 'uglify:dev', 'imagemin', 'cwebp', 'clean:dist',  'browserSync', 'watch']);
+  grunt.registerTask('build', ['clean:reset', 'sass', 'babel', 'ejs', 'sync', 'cssmin', 'autoprefixer', 'uglify:dist', 'imagemin', 'cwebp', 'clean:dist', 'sitemap']);
 };

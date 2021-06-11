@@ -6,6 +6,7 @@
     "babel-plugin-transform-remove-strict-mode": "latest",
     "babel-preset-es2015": "latest",
     "grunt": "latest",
+    "grunt-autoprefixer": "^3.0.4",
     "grunt-babel": "7.0.0",
     "grunt-browser-sync": "latest",
     "grunt-contrib-clean": "latest",

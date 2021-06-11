@@ -12,7 +12,7 @@ module.exports = {
       image: "/images/paolo.png",
       name: "Paolo Sangregorio",
       role: "Software Engineer III at Google",
-      birthday: new Date(1989, 6, 8),
+      birthday: new Date(1989, 5, 8), // month - 1 because of js...
       location: "Dublin, Republic of Ireland"
     },
     {
@@ -21,7 +21,7 @@ module.exports = {
       image: "/images/fabio.png",
       name: "Fabio Sangregorio",
       role: "Security Research Intern at SAP",
-      birthday: new Date(1997, 10, 14),
+      birthday: new Date(1997, 9, 14), // month - 1 because of js...
       location: "Milan, Italy"
     }
   ]
