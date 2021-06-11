@@ -16,7 +16,7 @@
 
 <div class="cards-container">
   <% for (var person of people) { %>
-    <article class="card">
+    <article class="card" onclick>
       <div class="overlay">
         <a class="link-text" href="<%= person.url %>"><%= person.urlText %></a>
         <a class="link-arrow" href="<%= person.url %>">
