@@ -20,7 +20,7 @@ module.exports = {
       urlText: "fabio.sangregorio.dev",
       image: "/images/fabio.png",
       name: "Fabio Sangregorio",
-      role: "Security Research Intern at SAP",
+      role: "Android Engineer at Bending Spoons",
       birthday: new Date(1997, 9, 14), // month - 1 because of js...
       location: "Milan, Italy"
     }
