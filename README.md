@@ -31,4 +31,4 @@ For any issue, question or feature request feel free to open an issue on this re
 
 ## License
 **[MIT](https://opensource.org/licenses/MIT)** - Copyright 2020 © <a href="http://sangregorio.dev"
-  target="_blank">sangregorio.dev</a>.
+  target="_blank">sangregorio.dev</a>. 
