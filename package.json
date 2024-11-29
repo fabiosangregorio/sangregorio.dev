@@ -1,31 +1,19 @@
 {
-  "name": "personal-website",
-  "version": "1.0.0",
-  "devDependencies": {
-    "babel-core": "latest",
-    "babel-plugin-transform-remove-strict-mode": "latest",
-    "babel-preset-es2015": "latest",
-    "grunt": "latest",
-    "grunt-autoprefixer": "^3.0.4",
-    "grunt-babel": "7.0.0",
-    "grunt-browser-sync": "latest",
-    "grunt-contrib-clean": "latest",
-    "grunt-contrib-cssmin": "latest",
-    "grunt-contrib-imagemin": "latest",
-    "grunt-contrib-uglify": "latest",
-    "grunt-contrib-watch": "latest",
-    "grunt-cwebp": "latest",
-    "grunt-ejs": "latest",
-    "grunt-ejs-locals": "latest",
-    "grunt-sass": "latest",
-    "grunt-sitemap": "latest",
-    "grunt-sync": "latest",
-    "imagemin-mozjpeg": "latest",
-    "node-sass": "latest"
+  "name": "sangregorio-dev",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "babel": {
-    "presets": [
-      "es2015"
-    ]
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.0",
+    "vite": "^5.0.0",
+    "sass": "^1.69.5",
+    "vite-imagetools": "^6.2.9"
   }
 }
