@@ -4,3 +4,9 @@ dist
 .vscode
 *.log
 package-lock.json
+.idea
+.next
+.pnp
+.pnp.js
+out/
+.DS_Store
