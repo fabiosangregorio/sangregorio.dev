@@ -1,0 +1,11 @@
+node_modules
+.sass-cache
+dist
+.vscode
+*.log
+.idea
+.next
+.pnp
+.pnp.js
+out/
+.DS_Store
