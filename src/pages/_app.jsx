@@ -1,5 +1,6 @@
 import '../sass/app.sass'
 import { Open_Sans } from 'next/font/google'
+import Head from 'next/head'
 
 const openSans = Open_Sans({
   subsets: ['latin'],
@@ -8,8 +9,13 @@ const openSans = Open_Sans({
 
 export default function App({ Component, pageProps }) {
   return (
-    <main className={openSans.className}>
-      <Component {...pageProps} />
-    </main>
+    <>
+      <Head>
+        <link rel="icon" href="data:," />
+      </Head>
+      <main className={openSans.className}>
+        <Component {...pageProps} />
+      </main>
+    </>
   )
 } 
