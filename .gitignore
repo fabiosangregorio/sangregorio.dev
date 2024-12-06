@@ -3,7 +3,6 @@ node_modules
 dist
 .vscode
 *.log
-package-lock.json
 .idea
 .next
 .pnp
